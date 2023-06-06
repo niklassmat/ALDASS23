@@ -1,21 +1,17 @@
-Eine alternative Implementierung einer Prioritätswarteschlange für Notrufe könnte auf einem Binären Suchbaum (BST) basieren.
-Dabei würde jeder Knoten des Baums ein Notruf sein, und die Notrufe würden so sortiert,
+Bei einem Binären Suchbaum (BST) würde jeder Knoten des Baums ein Notruf sein, und die Notrufe würden so sortiert,
 dass Notrufe mit höherer Priorität (höherem Notfalllevel) immer vor Notrufen mit niedrigerer Priorität in den Baum eingefügt werden.
 Der Name des Anrufers könnte in jedem Knoten zusammen mit dem Notfalllevel gespeichert werden.
 
 Vorteile der Verwendung eines Baums für diese Aufgabe:
 
-Sucheffizienz: Binäre Suchbäume ermöglichen effiziente Suchoperationen, was nützlich sein könnte,
-wenn wir bestimmte Notrufe in der Warteschlange suchen möchten.
-Flexibilität: Bäume sind flexibler als Heaps, da sie uns erlauben,
-die Datenstruktur auf vielfältige Weise zu ändern und zu manipulieren.
+Sucheffizienz
+Flexibilität (Bäume sind flexibeler als Heaps)
 
 Nachteile der Verwendung eines Baums für diese Aufgabe:
 
-Komplexität: Die Implementierung einer Prioritätswarteschlange mit einem Baum kann komplexer sein als mit einem Heap,
-insbesondere wenn es darum geht, den Baum bei Einfügungen und Löschungen ausgeglichen zu halten.
-Effizienz: Wenn der Baum nicht ausgeglichen gehalten wird (was zusätzlichen Code erfordert),
-können Operationen wie Einfügen und Löschen ineffizient werden,
-da sie in einem unausgeglichenen Baum zur Laufzeit O(n) anstatt zur Laufzeit O(log n) in einem ausgeglichenen Baum führen können.
+Komplexität
+Effizienz
 
-Zusammenfassend lässt sich sagen, dass die Wahl der Datenstruktur von den spezifischen Anforderungen der Aufgabe abhängt. Wenn es nur darum geht, Notrufe mit der höchsten Priorität effizient zu finden und zu entfernen, könnte ein Heap eine gute Wahl sein. Wenn jedoch auch andere Operationen, wie die Suche nach spezifischen Notrufen, benötigt werden, könnte ein Binärer Suchbaum eine Überlegung wert sein.
+Die Wahl der Datenstruktur von den spezifischen Anforderungen der Aufgabe abhängt. 
+Wenn es nur darum geht, Notrufe mit der höchsten Priorität effizient zu finden und zu entfernen, könnte ein Heap eine gute Wahl sein. Wenn jedoch auch andere Operationen, 
+wie die Suche nach spezifischen Notrufen, benötigt werden, könnte ein Binärer Suchbaum eine Überlegung wert sein.
